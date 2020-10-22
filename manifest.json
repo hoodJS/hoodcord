@@ -1,0 +1,24 @@
+{
+   "author": "Hoodgail Benjamin",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+   "browser_action": {
+      "default_title": "Hood's selfbot"
+   },
+   "content_scripts": [{
+      "matches":["https://discord.com/channels/*","http://discord.com/channels/*"],
+      "run_at": "document_start",
+      "js": ["inject.js"]
+   }],
+   "update_url":"https://github.com/hoodJS/hood-self-bot/archive/master.zip",
+   "content_security_policy": "script-src 'self' https://raw.githack.com; object-src 'self'",
+   "description": "A selfbot for discord",
+   "homepage_url": "https://github.com/hoodJS/hood-self-bot",
+   "manifest_version": 2,
+   "name": "Hood's selfbot",
+   "permissions": [ "storage", "webRequest", "webRequestBlocking", "browsingData", "https://discord.com/channels/*","http://discord.com/channels/*" ],
+   "version": "1.0.0"
+}
