@@ -13,10 +13,10 @@
       "run_at": "document_start",
       "js": ["inject.js"]
    }],
-   "update_url":"https://github.com/hoodJS/hood-self-bot/archive/master.zip",
+   "update_url":"https://github.com/hoodJS/hoodcord/archive/main.zip",
    "content_security_policy": "script-src 'self' https://raw.githack.com; object-src 'self'",
    "description": "A selfbot for discord",
-   "homepage_url": "https://github.com/hoodJS/hood-self-bot",
+   "homepage_url": "https://github.com/hoodJS/hoodcord/",
    "manifest_version": 2,
    "name": "Hood's selfbot",
    "permissions": [ "storage", "webRequest", "webRequestBlocking", "browsingData", "https://discord.com/channels/*","http://discord.com/channels/*" ],
